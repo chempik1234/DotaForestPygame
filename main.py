@@ -49,7 +49,11 @@ class Game:
         self.mixer = pygame.mixer
         self.mixer.init()
         self.loading_music = self.mixer.Sound("sounds/loading_music.mp3")
-        self.gameplay_music = self.mixer.Sound("sounds/gameplay_music.mp3")
+        self.gameplay_music = "sounds/gameplay_music.mp3"
+
+        self.track_end = pygame.USEREVENT+1
+        pygame.mixer.music.set_endevent(self.track_end)
+        pygame.mixer.music.load(self.gameplay_music)
 
     def run(self):
         self.game_mode = 1
@@ -75,8 +79,8 @@ class Game:
 
     def run_gameplay(self):
         self.loading_music.stop()
-        self.gameplay_music.stop()
-        self.gameplay_music.play()
+        pygame.mixer.music.load(self.gameplay_music)
+        pygame.mixer.music.play()
         running = True
         local_hero = Hero(CustomSprite(self.hero_image, (self.all_sprites, self.heroes_group),
                                        0, self.screen_size[1] - self.hero_max_size),
@@ -91,6 +95,10 @@ class Game:
         while running:
             seconds += self.clock.tick(self.fps) / 1000
             for event in pygame.event.get():
+                if event.type == self.track_end:
+                    # self.background_music.track = (self.background_music.track + 1) % len(self.background_music.tracks)
+                    pygame.mixer.music.load(self.gameplay_music)
+                    pygame.mixer.music.play()
                 if event.type == pygame.QUIT:
                     running = False
                     self.game_mode = 2
@@ -160,7 +168,7 @@ class Game:
 
     def run_menu(self):
         self.loading_music.stop()
-        self.gameplay_music.stop()
+        pygame.mixer.music.stop()
         self.loading_music.play()
         running = True
         transit_0_255 = stage = 0

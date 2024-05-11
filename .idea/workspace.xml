@@ -4,33 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5306d8b-7a21-4a34-878e-3945fb22d68c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DotaForest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/attack.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/gameplay_music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/loading_music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/accept.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/enemy0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/enemy1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/enemy2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/enemy3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/hero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/pickup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/tree0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/tree1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/tree2.png" afterDir="false" />
+    <list default="true" id="a5306d8b-7a21-4a34-878e-3945fb22d68c" name="Changes" comment="ready">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +54,19 @@
       <option name="presentableId" value="Default" />
       <updated>1715438807766</updated>
     </task>
+    <task id="LOCAL-00001" summary="ready">
+      <option name="closed" value="true" />
+      <created>1715444074604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444074604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready" />
   </component>
 </project>
